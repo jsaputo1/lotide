@@ -13,7 +13,7 @@ const eqArrays = function (x, y) {
   return true;
 };
 
-console.log((eqArrays([1, 2, 3], [1, 2, 3]), true)); // => should PASS
-console.log((eqArrays([1, 2, 3], [3, 2, 1]), false)); // => false
-console.log((eqArrays(["1", "2", "3"], ["1", "2", "3"]), true)); // => true
-console.log((eqArrays(["1", "2", "3"], ["1", "2", 3]), false)); // => false
+console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => should PASS
+console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
