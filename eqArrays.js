@@ -1,8 +1,11 @@
+const green = "\x1b[32m%s\x1b[0m";
+const red = "\x1b[31m%s\x1b[0m";
+
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
-    console.log(`👍 Assertion Passed: ${actual} === ${expected}`);
+    console.log(green, `Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`👎 Assertion Failed:  ${actual} !==  ${expected}`);
+    console.log(red, `Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -15,7 +18,6 @@ const eqArrays = function (x, y) {
       return false;
     }
   }
-
   return true;
 };
 
